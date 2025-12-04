@@ -37,3 +37,20 @@ function sendMessage() {
         alert('Veuillez remplir tous les champs');
     }
 }
+// --- Effet étoiles qui suivent la souris sur la page d'accueil ---
+document.addEventListener("mousemove", function(e) {
+    const star = document.createElement("span");
+    star.classList.add("trail-star");
+    star.textContent = "✦";
+
+    // Position de l'étoile
+    star.style.left = e.pageX + "px";
+    star.style.top = e.pageY + "px";
+
+    document.body.appendChild(star);
+
+    // Suppression après l’animation
+    setTimeout(() => {
+        star.remove();
+    }, 800);
+});
