@@ -37,6 +37,16 @@ function sendMessage() {
         alert('Veuillez remplir tous les champs');
     }
 }
+
+function downloadCV() {
+    // Créer un lien de téléchargement
+    const link = document.createElement('a');
+    link.href = 'assets/CV-LylouDebiais.pdf'; // Chemin du fichier CV
+    link.download = 'CV-LylouDebiais.pdf'; // Nom du fichier téléchargé
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
 // --- Effet étoiles qui suivent la souris sur la page d'accueil ---
 document.addEventListener("mousemove", function(e) {
     const star = document.createElement("span");
@@ -53,4 +63,24 @@ document.addEventListener("mousemove", function(e) {
     setTimeout(() => {
         star.remove();
     }, 800);
+});
+
+// Fonction pour gérer les clics sur les cartes de projet
+document.addEventListener('DOMContentLoaded', function() {
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    projectCards.forEach((card, index) => {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', function() {
+            // Mapping des index aux IDs des pages SAÉ
+            const saePages = [
+                'sae-3crea01', 'sae-302', 'sae-3crea03',
+                'sae-4crea01', 'sae-4crea02'
+            ];
+            
+            if (saePages[index]) {
+                showPage(saePages[index]);
+            }
+        });
+    });
 });
