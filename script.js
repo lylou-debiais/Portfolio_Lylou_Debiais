@@ -24,18 +24,7 @@ function toggleMobileMenu() {
 }
 
 function sendMessage() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    if (name && email && message) {
-        alert('Message envoyé ! (fonctionnalité de démonstration)');
-        document.getElementById('name').value = '';
-        document.getElementById('email').value = '';
-        document.getElementById('message').value = '';
-    } else {
-        alert('Veuillez remplir tous les champs');
-    }
+    // Cette fonction n'est plus utilisée - FormSubmit gère l'envoi
 }
 
 function downloadCV() {
