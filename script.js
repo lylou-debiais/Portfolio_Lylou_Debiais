@@ -23,6 +23,14 @@ function toggleMobileMenu() {
     navMenu.classList.toggle('mobile-open');
 }
 
+function switchLanguage(lang) {
+    if (lang === 'fr') {
+        window.location.href = 'index.html';
+    } else if (lang === 'en') {
+        window.location.href = 'index-en.html';
+    }
+}
+
 function sendMessage() {
     // Cette fonction n'est plus utilisée - FormSubmit gère l'envoi
 }
