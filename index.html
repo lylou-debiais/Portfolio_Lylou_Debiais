@@ -273,20 +273,22 @@
 
                 <div class="contact-form">
                     <h3 style="font-size: 24px; font-weight: 700; color: #1f2937; margin-bottom: 24px;">Envoyez un message</h3>
-                    <form action="https://formsubmit.co/lyloudebiais@gmail.com" method="POST">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="245342a8-30f9-42b5-9281-581cf4766718">
+                        <input type="hidden" name="subject" value="Nouveau message du portfolio">
+                        <input type="hidden" name="redirect" value="">
                         <div class="form-group">
                             <label>Nom</label>
-                            <input type="text" placeholder="Votre nom" name="Nom" required>
+                            <input type="text" placeholder="Votre nom" name="name" required>
                         </div>
                         <div class="form-group">
                             <label>Email</label>
-                            <input type="email" placeholder="votre@email.com" name="Email" required>
+                            <input type="email" placeholder="votre@email.com" name="email" required>
                         </div>
                         <div class="form-group">
                             <label>Message</label>
-                            <textarea placeholder="Votre message..." name="Message" required></textarea>
+                            <textarea placeholder="Votre message..." name="message" required></textarea>
                         </div>
-                        <input type="hidden" name="_captcha" value="false">
                         <button type="submit" class="submit-btn">Envoyer</button>
                     </form>
                 </div>
