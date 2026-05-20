@@ -49,6 +49,11 @@ nav {
     letter-spacing: -2px;
 }
 
+.logo-img {
+    height: 50px;
+    object-fit: contain;
+}
+
 .nav-menu {
     display: flex;
     gap: 32px;
