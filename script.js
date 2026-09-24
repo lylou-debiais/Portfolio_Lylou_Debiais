@@ -38,8 +38,8 @@ function sendMessage() {
 function downloadCV() {
     // Créer un lien de téléchargement
     const link = document.createElement('a');
-    link.href = 'assets/CV-LylouDebiais.pdf'; // Chemin du fichier CV
-    link.download = 'CV-LylouDebiais.pdf'; // Nom du fichier téléchargé
+    link.href = 'assets/CV%20-%20Debiais%20Lylou.pdf'; // Chemin du fichier CV
+    link.download = 'CV - Debiais Lylou.pdf'; // Nom du fichier téléchargé
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
