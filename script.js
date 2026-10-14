@@ -329,7 +329,8 @@ function chips(a) {
 }
 function card(p, i) {
   const x = tx(p);
-  return `<a class="pc" href="#/projet/${p.id}"><div class="ph" style="background:${bg(p, i)}"><small>${x.tag}</small><b>0${i + 1}</b>${x.t.replace("\n", "<br>")}</div><div class="tx"><h3>${x.n}</h3><p>${x.d}</p></div></a>`;
+  const number = { sae301: 1, sae302: 2, sae303: 3, sae401: 4, sae402: 5 }[p.id] || i + 1;
+  return `<a class="pc" href="#/projet/${p.id}"><div class="ph" style="background:${bg(p, i)}"><small>${x.tag}</small><b>0${number}</b>${x.t.replace("\n", "<br>")}</div><div class="tx"><h3>${x.n}</h3><p>${x.d}</p></div></a>`;
 }
 function bg(p, i) {
   return p.img ? `linear-gradient(135deg, rgba(46,32,25,.2), rgba(46,32,25,.6)), url("${encodeURI(p.img)}") center/cover` : G[i % G.length];
@@ -449,7 +450,7 @@ const V = {
 ${softs()}<section class="alt"><div class="w two"><div><div class="eyebrow">${T.journey}</div><h2>${T.look}</h2></div><div><p>${T.bio1}</p><p>${T.bio2}</p></div></div></section>
 <section><div class="w"><div class="eyebrow">${T.passions}</div><div class="cards"><div class="card"><div class="ic">🎨</div><h3>${T.p1t}</h3><p>${T.p1d}</p></div><div class="card"><div class="ic">✨</div><h3>${T.p2t}</h3><p>${T.p2d}</p></div><div class="card"><div class="ic">💻</div><h3>${T.p3t}</h3><p>${T.p3d}</p></div></div></div></section>
 <section class="alt"><div class="w"><div class="eyebrow">${T.best}</div><h2>${T.select}</h2><div class="proj p3">${[0, 1, 3].map((i) => card(P[i], i)).join("")}</div><div style="margin-top:28px"><a class="btn o" href="#/realisations">${T.all}</a></div></div></section>${cta()}`,
-  realisations: () => `<div class="w phead"><div class="eyebrow">${T.year}</div><h1>${T.worksTitle}</h1></div><div class="w" style="padding-bottom:64px"><div class="proj">${[4, 3, 2, 1, 0].map((i) => card(P[i], i)).join("")}</div></div>${cta()}`,
+  realisations: () => `<div class="w phead"><div class="eyebrow">${T.year}</div><h1>${T.worksTitle}</h1></div><div class="w" style="padding-bottom:64px"><div class="proj">${[1, 0, 4, 3, 2].map((i) => card(P[i], i)).join("")}</div></div>${cta()}`,
   cv: () => `<div class="w phead"><div class="eyebrow">${T.path}</div><h1>${T.cvTitle}</h1><div class="lk"><a class="btn" href="assets/CV%20-%20Debiais%20Lylou.pdf" download="CV - Debiais Lylou.pdf">${T.download}</a></div></div>
 <section style="padding-top:0"><div class="w"><h2>${T.education}</h2><div class="tl">${educations.map((e) => `<div><span>${e[0]}</span><section style="padding:0"><h3>${e[1]}</h3><p>${e[2]}</p></section></div>`).join("")}</div></div></section>
 <section class="alt"><div class="w"><div class="eyebrow">${T.toolbox}</div><h2>${T.ideas}</h2><div class="cards c2"><div class="card"><h3>${T.design}</h3><br>${chips(["Illustrator", "Figma", "InDesign", "After Effects", "Premiere Pro", "Photoshop", "Canva"])}</div><div class="card"><h3>${T.web}</h3><br>${chips(["HTML/CSS", "JavaScript", "WordPress", "PHP", "MySQL"])}</div></div></div></section>${softs()}${cta()}`,
