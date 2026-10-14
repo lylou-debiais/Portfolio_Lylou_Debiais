@@ -492,6 +492,28 @@ function bindForm() {
 }
 let coverTimer;
 let renderTimer;
+function startLoader() {
+  const loader = document.getElementById("site-loader");
+  const bar = document.getElementById("loader-bar");
+  const percent = document.getElementById("loader-percent");
+  if (!loader || !bar || !percent) return;
+  const duration = 1000;
+  const started = performance.now();
+  const tick = () => {
+    const progress = Math.min(1, (performance.now() - started) / duration);
+    const value = Math.round(progress * 100);
+    bar.style.width = `${value}%`;
+    percent.textContent = `${value}%`;
+    if (progress < 1) {
+      return;
+    }
+    clearInterval(timer);
+    loader.classList.add("loaded");
+    setTimeout(() => loader.remove(), 250);
+  };
+  const timer = setInterval(tick, 16);
+  tick();
+}
 function go(animate = true) {
   const h = (location.hash || "#/").slice(2).split("/");
   const r = h[0] || "home";
@@ -556,6 +578,7 @@ addEventListener("DOMContentLoaded", () => {
   document.getElementById("copy-passion").textContent = T.passion;
   syncThemeButton();
   go(false);
+  startLoader();
 });
 window.sl = sl;
 window.toggleMenu = toggleMenu;
