@@ -129,6 +129,136 @@ const UI = {
 const T = UI[LANG];
 const P = [
   {
+    id: "sae501-psd",
+    img: "",
+    s: ["Adobe Photoshop", "Photomontage", "Illustration", "Direction artistique", "Série graphique", "Détourage", "Brush", "Texture", "Colorimétrie", "Organisation des calques", "Print Design", "Mise en page"],
+    l: [["Site de la fédération Hiero", "Hiero federation website", "https://www.hierolimoges.fr/"]],
+    previews: [],
+    docs: [
+      ["assets/sae501-etapes-creation.pdf", "Étapes de création", "Télécharger les étapes de création"],
+      ["assets/sae501-flyers.pdf", "Flyers Hiero", "Télécharger les flyers"]
+    ],
+    fr: {
+      tag: "Illustration PSD",
+      t: "Le son prend\nforme.",
+      n: "SAÉ 5.Crea.01 — Série de visuels pour la fédération Hiero",
+      d: "Une série de quatre photomontages intrigants pour annoncer les programmes de concerts 2026 à Limoges.",
+      c: "Créer une série de visuels singuliers et reconnaissables, capables de se démarquer parmi les flyers classiques tout en affirmant l’identité indépendante de Hiero.",
+      q: "Comment traduire l’énergie d’une programmation musicale en quatre images hybrides, fun et décalées, ancrées dans la culture locale de Limoges ?",
+      did: "J’ai imaginé quatre visuels de communication pour les éditions trimestrielles du flyer Hiero 2026. La série repose sur des personnages hybrides issus de photomontages, mêlant références pop, humour, étrangeté et clins d’œil à Limoges.",
+      o: [
+        "Analyser la communication existante de la fédération Hiero et sa cible",
+        "Créer quatre visuels cohérents pour les programmes de concerts 2026",
+        "Construire une direction artistique inspirée des photomontages intrigants de Hiero",
+        "Intégrer des références pop culture, du fun et une dimension décalée",
+        "Glisser des références locales à Limoges : porcelaine, architecture ou basket",
+        "Préparer les compositions pour une impression de qualité sur flyer"
+      ],
+      r: [
+        "Recherche de la communication précédente de Hiero, des artistes programmés et des références visuelles",
+        "Recherches photographiques, croquis de poses et sélection d’intentions pour la série",
+        "Création d’une illustration principale servant de référence aux trois déclinaisons",
+        "Détourage précis des photographies et assemblage des personnages hybrides dans Photoshop",
+        "Travail des brushes, textures, filtres, effets et de la colorimétrie",
+        "Organisation des calques pour conserver un fichier source Photoshop exploitable",
+        "Tests de mise en page et intégration des quatre visuels dans le flyer Hiero",
+        "Cycles d’affinage à partir des retours extérieurs et de l’intervenant"
+      ]
+    },
+    en: {
+      tag: "PSD illustration",
+      t: "Sound takes\nshape.",
+      n: "SAÉ 5.Crea.01 — Visual series for the Hiero federation",
+      d: "A series of four intriguing photomontages announcing Hiero’s 2026 concert programmes in Limoges.",
+      c: "Create a distinctive, recognisable visual series that stands out among conventional flyers while expressing Hiero’s independent identity.",
+      q: "How can the energy of a music programme be translated into four hybrid, playful and unusual images rooted in Limoges’ local culture?",
+      did: "I designed four communication visuals for Hiero’s quarterly 2026 flyers. The series uses hybrid characters made from photomontages, combining pop references, humour, strangeness and local references to Limoges.",
+      o: [
+        "Analyse Hiero’s existing communication and its audience",
+        "Create four coherent visuals for the 2026 concert programmes",
+        "Build an art direction inspired by Hiero’s intriguing photomontages",
+        "Combine pop culture references, fun and an unconventional tone",
+        "Include local references to Limoges: porcelain, architecture or basketball",
+        "Prepare high-quality compositions for printed flyers"
+      ],
+      r: [
+        "Research into Hiero’s previous communication, programmed artists and visual references",
+        "Photo research, pose sketches and selection of creative directions",
+        "Creation of a key illustration used as the basis for three variations",
+        "Precise photo cut-outs and assembly of hybrid characters in Photoshop",
+        "Brush, texture, filter, effect and colour-grading work",
+        "Layer organisation to keep an editable Photoshop source file",
+        "Layout tests and integration of the four visuals into the Hiero flyer",
+        "Refinement cycles based on peer and tutor feedback"
+      ]
+    }
+  },
+  {
+    id: "sae501",
+    img: "",
+    s: ["Illustration", "Adobe Illustrator", "Adobe Photoshop", "Direction artistique", "Série graphique", "Print Design", "Mise en page", "Charte graphique", "Recherche visuelle", "Création de personnages"],
+    l: [],
+    previews: [],
+    docs: [
+      ["assets/sae501-illustrations-finales.pdf", "Illustrations finalisées", "Télécharger les illustrations finales"],
+      ["assets/sae501-charte-utilisation.pdf", "Charte d’utilisation", "Télécharger la charte d’utilisation"],
+      ["assets/sae501-etapes-creation-completes.pdf", "Étapes de création", "Télécharger les étapes de création"],
+      ["assets/sae501-flyer.pdf", "Flyer A6", "Télécharger le flyer"]
+    ],
+    fr: {
+      tag: "Illustration",
+      t: "Les métiers de\nla céramique.",
+      n: "SAÉ 5.Crea.01 — Création d’une série d’illustrations",
+      d: "Un kit d’illustrations inclusif et actuel pour faire découvrir les métiers de la céramique à Limoges.",
+      c: "Dépasser l’image générique pour construire une réponse illustrée singulière, cohérente et directement exploitable par un office de tourisme.",
+      q: "Comment créer une série d’illustrations vivante et homogène pour valoriser les métiers de la céramique auprès d’un public touristique français et international ?",
+      did: "J’ai conçu une série de personnages en activité — créateur, chercheur, technicien — autour du parcours des métiers de la céramique. Le kit a été pensé pour être décliné sur un flyer A6, des supports print et numériques, les réseaux sociaux et du motion design.",
+      o: [
+        "Expérimenter des techniques et méthodologies d’illustration",
+        "Créer une série de personnages sans décor, cohérente et inclusive",
+        "Développer une direction artistique actuelle, qualitative et attractive",
+        "Préparer une mise en situation sur le verso d’un flyer A6",
+        "Formaliser une charte d’utilisation avec les codes couleurs, marges et interdictions",
+        "Documenter les recherches, tests, déclinaisons et cycles d’affinage"
+      ],
+      r: [
+        "Recherches photographiques, références de styles et croquis de poses",
+        "Tests techniques et prototype dans Adobe Illustrator, puis travail d’image dans Photoshop",
+        "Création d’une illustration principale et déclinaison en série de personnages et situations",
+        "Mise en situation avec le texte « Parcours des métiers de la céramique » et le logo de l’Office de Tourisme",
+        "Conception d’une charte d’utilisation du kit : CMJN/RVB, marges, proportions et usages",
+        "Prise en compte des regards extérieurs et affinage des choix graphiques",
+        "Transparence sur l’usage de l’IA à chaque phase grâce aux mentions NIA, GIA ou AIA"
+      ]
+    },
+    en: {
+      tag: "Illustration",
+      t: "Ceramic crafts\nat work.",
+      n: "SAÉ 5.Crea.01 — Illustration series",
+      d: "An inclusive, contemporary illustration kit introducing Limoges’ ceramic crafts.",
+      c: "Move beyond generic imagery to build a distinctive, consistent and ready-to-use illustrated response for a tourism office.",
+      q: "How can a lively, cohesive illustration series promote ceramic crafts to French and international visitors?",
+      did: "I designed a series of working characters — creator, researcher and technician — for a ceramic crafts trail. The kit was designed for an A6 flyer, print and digital materials, social media and motion design.",
+      o: [
+        "Experiment with illustration techniques and methods",
+        "Create a consistent and inclusive series of characters without backgrounds",
+        "Develop a contemporary, qualitative and attractive art direction",
+        "Design an example layout for the back of an A6 flyer",
+        "Define usage guidelines with colour codes, margins and restrictions",
+        "Document research, tests, variations and refinement cycles"
+      ],
+      r: [
+        "Photo research, style references and pose sketches",
+        "Technical tests and prototype in Adobe Illustrator, followed by image work in Photoshop",
+        "Creation of a key illustration and a series of characters and situations",
+        "Application mockup featuring “Parcours des métiers de la céramique” and the Tourism Office logo",
+        "Usage guide covering CMYK/RGB, margins, proportions and applications",
+        "External feedback and refinement of the visual choices",
+        "Transparent AI reporting for each phase using NIA, GIA or AIA labels"
+      ]
+    }
+  },
+  {
     id: "sae401",
     img: "assets/sae401/petits-gens-responsable-marketing-megaphone-publicite-push-publicite-push-strategie-marketing-traditionnelle-illustration-concept-marketing-interruption_335657-2571.avif",
     s: ["Direction artistique", "Identité visuelle", "Branding", "UX/UI Design", "Motion Design", "Print Design", "Figma", "Sémiotique", "Design Thinking", "Double Diamant", "Pitch oral", "Anglais professionnel"],
@@ -329,7 +459,7 @@ function chips(a) {
 }
 function card(p, i) {
   const x = tx(p);
-  const number = { sae301: 1, sae302: 2, sae303: 3, sae401: 4, sae402: 5 }[p.id] || i + 1;
+  const number = { sae301: 1, sae302: 2, sae303: 3, sae401: 4, sae402: 5, sae501: 6, "sae501-psd": 7 }[p.id] || i + 1;
   return `<a class="pc" href="#/projet/${p.id}"><div class="ph" style="background:${bg(p, i)}"><small>${x.tag}</small><b>0${number}</b>${x.t.replace("\n", "<br>")}</div><div class="tx"><h3>${x.n}</h3><p>${x.d}</p></div></a>`;
 }
 function bg(p, i) {
@@ -449,8 +579,8 @@ const V = {
   home: () => `<div class="w hero"><div><div class="eyebrow">${T.welcome}</div><h1>Lylou<br><em>Debiais.</em></h1><p class="lead">${T.lead}</p><a class="btn" href="#/realisations">${T.seeWorks}</a> &nbsp;<a class="btn o" href="#/contact">${T.contact}</a></div><div class="arch"><span>ld.</span></div></div>
 ${softs()}<section class="alt"><div class="w two"><div><div class="eyebrow">${T.journey}</div><h2>${T.look}</h2></div><div><p>${T.bio1}</p><p>${T.bio2}</p></div></div></section>
 <section><div class="w"><div class="eyebrow">${T.passions}</div><div class="cards"><div class="card"><div class="ic">🎨</div><h3>${T.p1t}</h3><p>${T.p1d}</p></div><div class="card"><div class="ic">✨</div><h3>${T.p2t}</h3><p>${T.p2d}</p></div><div class="card"><div class="ic">💻</div><h3>${T.p3t}</h3><p>${T.p3d}</p></div></div></div></section>
-<section class="alt"><div class="w"><div class="eyebrow">${T.best}</div><h2>${T.select}</h2><div class="proj p3">${[0, 1, 3].map((i) => card(P[i], i)).join("")}</div><div style="margin-top:28px"><a class="btn o" href="#/realisations">${T.all}</a></div></div></section>${cta()}`,
-  realisations: () => `<div class="w phead"><div class="eyebrow">${T.year}</div><h1>${T.worksTitle}</h1></div><div class="w" style="padding-bottom:64px"><div class="proj">${[1, 0, 4, 3, 2].map((i) => card(P[i], i)).join("")}</div></div>${cta()}`,
+<section class="alt"><div class="w"><div class="eyebrow">${T.best}</div><h2>${T.select}</h2><div class="proj p3">${[0, 1, 2].map((i) => card(P[i], i)).join("")}</div><div style="margin-top:28px"><a class="btn o" href="#/realisations">${T.all}</a></div></div></section>${cta()}`,
+  realisations: () => `<div class="w phead"><div class="eyebrow">${T.year}</div><h1>${T.worksTitle}</h1></div><div class="w" style="padding-bottom:64px"><div class="proj">${[0, 1, 4, 3, 2, 5, 6].map((i) => card(P[i], i)).join("")}</div></div>${cta()}`,
   cv: () => `<div class="w phead"><div class="eyebrow">${T.path}</div><h1>${T.cvTitle}</h1><div class="lk"><a class="btn" href="assets/CV%20-%20Debiais%20Lylou.pdf" download="CV - Debiais Lylou.pdf">${T.download}</a></div></div>
 <section style="padding-top:0"><div class="w"><h2>${T.education}</h2><div class="tl">${educations.map((e) => `<div><span>${e[0]}</span><section style="padding:0"><h3>${e[1]}</h3><p>${e[2]}</p></section></div>`).join("")}</div></div></section>
 <section class="alt"><div class="w"><div class="eyebrow">${T.toolbox}</div><h2>${T.ideas}</h2><div class="cards c2"><div class="card"><h3>${T.design}</h3><br>${chips(["Illustrator", "Figma", "InDesign", "After Effects", "Premiere Pro", "Photoshop", "Canva"])}</div><div class="card"><h3>${T.web}</h3><br>${chips(["HTML/CSS", "JavaScript", "WordPress", "PHP", "MySQL"])}</div></div></div></section>${softs()}${cta()}`,
@@ -463,10 +593,14 @@ ${softs()}<section class="alt"><div class="w two"><div><div class="eyebrow">${T.
     const previews = p.previews.length
       ? `<div class="previews">${p.previews.map((img) => `<div class="preview"><img src="${encodeURI(img[0])}" alt="${img[1]}"></div>`).join("")}</div>`
       : "";
+    const docs = p.docs && p.docs.length
+      ? `<section class="project-docs"><div class="eyebrow">${LANG === "en" ? "Project documents" : "Documents du projet"}</div><div class="document-grid">${p.docs.map((doc) => `<article class="document"><h3>${doc[1]}</h3><iframe src="${encodeURI(doc[0])}" title="${doc[1]}" loading="lazy"></iframe><a class="btn o" href="${encodeURI(doc[0])}" target="_blank" rel="noopener">${LANG === "en" ? "Open PDF" : doc[2]}</a></article>`).join("")}</div></section>`
+      : "";
     return `<div class="w"><a class="back" href="#/realisations">${T.back}</a><div class="phead" style="padding-top:0"><div class="eyebrow">${x.tag} · ${LANG === "en" ? "2nd year Digital Creation" : "2ème année Création Numérique"}</div><h1>${x.t.replace("\n", "<br>")}</h1><p style="color:var(--mute)">${x.n}</p></div><div class="cover" style="background:${bg(p, k)}">${x.tag}</div>
 <div class="two" style="padding:48px 0"><div><div class="eyebrow">${T.targeted}</div><p class="serif" style="font-size:26px">${x.c}</p><br><div class="eyebrow">${T.did}</div><p style="color:var(--mute)">${x.did}</p>${previews}<div class="lk">${p.l.map((link) => `<a class="btn" target="_blank" rel="noopener" href="${link[2]}">${LANG === "en" ? link[1] : link[0]}</a>`).join("")}</div></div><div><div class="eyebrow">${T.goals}</div>${ul(x.o)}</div></div>
 <div class="quote">« ${x.q} »</div>
 <div class="two" style="padding:48px 0"><div><div class="eyebrow">${T.problem}</div><h2>${T.work}</h2></div><div>${ul(x.r)}</div></div>
+${docs}
 <div style="padding-bottom:64px"><div class="eyebrow">${T.skills}</div>${chips(p.s)}</div></div>${cta()}`;
   }
 };
