@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrations des métiers de la céramique</title>
+  <desc id="desc">Composition colorée inspirée de la céramique et du savoir-faire artisanal.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d78a64"/>
+      <stop offset="1" stop-color="#6c4a4b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <path d="M0 500C160 420 300 440 420 540s270 140 420-10 250-120 360-50v220H0Z" fill="#ead0a5" opacity=".7"/>
+  <circle cx="310" cy="290" r="142" fill="#f2d5a5"/>
+  <circle cx="310" cy="290" r="90" fill="#b6644d"/>
+  <path d="M250 290h120M310 230v120" stroke="#f2d5a5" stroke-width="16" stroke-linecap="round"/>
+  <path d="M630 180h300M630 215h190" stroke="#fff1d2" stroke-width="12" opacity=".9"/>
+  <text x="630" y="330" fill="#fff1d2" font-family="Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="5">CERAMIQUE</text>
+  <text x="633" y="380" fill="#fff1d2" font-family="Arial, sans-serif" font-size="22" letter-spacing="3">METIERS &amp; SAVOIR-FAIRE</text>
+</svg>

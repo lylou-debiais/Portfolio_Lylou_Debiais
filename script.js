@@ -130,7 +130,7 @@ const T = UI[LANG];
 const P = [
   {
     id: "sae501-psd",
-    img: "",
+    img: "assets/sae501-psd-cover.svg",
     s: ["Adobe Photoshop", "Photomontage", "Illustration", "Direction artistique", "Série graphique", "Détourage", "Brush", "Texture", "Colorimétrie", "Organisation des calques", "Print Design", "Mise en page"],
     l: [["Site de la fédération Hiero", "Hiero federation website", "https://www.hierolimoges.fr/"]],
     previews: [],
@@ -195,7 +195,7 @@ const P = [
   },
   {
     id: "sae501",
-    img: "",
+    img: "assets/sae501-cover.svg",
     s: ["Illustration", "Adobe Illustrator", "Adobe Photoshop", "Direction artistique", "Série graphique", "Print Design", "Mise en page", "Charte graphique", "Recherche visuelle", "Création de personnages"],
     l: [],
     previews: [],
