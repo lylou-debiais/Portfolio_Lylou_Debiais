@@ -123,8 +123,7 @@ button, input, textarea { font: inherit; }
 }
 
 .site-loader img {
-  width: clamp(120px, 20vw, 220px);
-  filter: brightness(0) invert(1);
+  width: clamp(180px, 30vw, 340px);
   animation: loader-float 3.2s ease-in-out infinite;
 }
 
@@ -214,9 +213,9 @@ button, input, textarea { font: inherit; }
 }
 
 .page-cover img {
-  width: clamp(110px, 18vw, 230px);
+  width: clamp(220px, 36vw, 440px);
   height: auto;
-  filter: brightness(0) invert(1);
+  display: block;
 }
 
 .page-cover.active {
@@ -245,13 +244,23 @@ nav .w {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 88px;
   gap: 12px;
   position: relative;
 }
 
-.logo { font: 600 26px "Cormorant Garamond", serif; }
-.logo i { color: var(--acc); font-style: normal; }
+.logo {
+  display: flex;
+  align-items: center;
+  height: 74px;
+}
+
+.logo img {
+  width: 132px;
+  height: 72px;
+  object-fit: contain;
+  display: block;
+}
 
 .links {
   display: flex;
