@@ -130,13 +130,13 @@ const T = UI[LANG];
 const P = [
   {
     id: "sae501-psd",
-    img: "assets/sae501-psd-cover.svg",
+    img: "assets/sae501/sae501-psd-cover.svg",
     s: ["Adobe Photoshop", "Photomontage", "Illustration", "Direction artistique", "Série graphique", "Détourage", "Brush", "Texture", "Colorimétrie", "Organisation des calques", "Print Design", "Mise en page"],
     l: [["Site de la fédération Hiero", "Hiero federation website", "https://www.hierolimoges.fr/"]],
     previews: [],
     docs: [
-      ["assets/sae501-etapes-creation.pdf", "Étapes de création", "Télécharger les étapes de création"],
-      ["assets/sae501-flyers.pdf", "Flyers Hiero", "Télécharger les flyers"]
+      ["assets/sae501/sae501-etapes-creation.pdf", "Étapes de création", "Télécharger les étapes de création"],
+      ["assets/sae501/sae501-flyers.pdf", "Flyers Hiero", "Télécharger les flyers"]
     ],
     fr: {
       tag: "Illustration PSD",
@@ -195,15 +195,15 @@ const P = [
   },
   {
     id: "sae501",
-    img: "assets/sae501-cover.svg",
+    img: "assets/sae501/sae501-cover.svg",
     s: ["Illustration", "Adobe Illustrator", "Adobe Photoshop", "Direction artistique", "Série graphique", "Print Design", "Mise en page", "Charte graphique", "Recherche visuelle", "Création de personnages"],
     l: [],
     previews: [],
     docs: [
-      ["assets/sae501-illustrations-finales.pdf", "Illustrations finalisées", "Télécharger les illustrations finales"],
-      ["assets/sae501-charte-utilisation.pdf", "Charte d’utilisation", "Télécharger la charte d’utilisation"],
-      ["assets/sae501-etapes-creation-completes.pdf", "Étapes de création", "Télécharger les étapes de création"],
-      ["assets/sae501-flyer.pdf", "Flyer A6", "Télécharger le flyer"]
+      ["assets/sae501/sae501-illustrations-finales.pdf", "Illustrations finalisées", "Télécharger les illustrations finales"],
+      ["assets/sae501/sae501-charte-utilisation.pdf", "Charte d’utilisation", "Télécharger la charte d’utilisation"],
+      ["assets/sae501/sae501-etapes-creation-completes.pdf", "Étapes de création", "Télécharger les étapes de création"],
+      ["assets/sae501/sae501-flyer.pdf", "Flyer A6", "Télécharger le flyer"]
     ],
     fr: {
       tag: "Illustration",
@@ -260,13 +260,13 @@ const P = [
   },
   {
     id: "stage-le-phare",
-    img: "assets/stage-le-phare-icones.png",
+    img: "assets/stage/stage-le-phare-icones.png",
     s: ["UX/UI Design", "Figma", "Audit ergonomique", "User Stories", "Personae", "Design System", "Prototypage", "Wix", "Responsive Design", "Création d’icônes", "Référencement naturel"],
     l: [["Visiter le site du Phare", "Visit Le Phare website", "https://www.lephare-limoges.com/"]],
-    previews: [["assets/stage-le-phare-icones.png", "Icônes créées"]],
+    previews: [["assets/stage/stage-le-phare-icones.png", "Icônes créées"]],
     docs: [
-      ["assets/stage-le-phare-rapport.pdf", "Rapport de stage", "Télécharger le rapport de stage"],
-      ["assets/stage-le-phare-soutenance.pdf", "Soutenance de stage", "Télécharger la soutenance"]
+      ["assets/stage/stage-le-phare-rapport.pdf", "Rapport de stage", "Télécharger le rapport de stage"],
+      ["assets/stage/stage-le-phare-soutenance.pdf", "Soutenance de stage", "Télécharger la soutenance"]
     ],
     fr: {
       tag: "Stage · UX/UI Design",
@@ -642,7 +642,7 @@ ${softs()}<section class="alt"><div class="w two"><div><div class="eyebrow">${T.
 <section><div class="w"><div class="eyebrow">${T.passions}</div><div class="cards"><div class="card"><div class="ic">🎨</div><h3>${T.p1t}</h3><p>${T.p1d}</p></div><div class="card"><div class="ic">✨</div><h3>${T.p2t}</h3><p>${T.p2d}</p></div><div class="card"><div class="ic">💻</div><h3>${T.p3t}</h3><p>${T.p3d}</p></div></div></div></section>
 <section class="alt"><div class="w"><div class="eyebrow">${T.best}</div><h2>${T.select}</h2><div class="proj p3">${[0, 1, 2].map((i) => card(P[i], i)).join("")}</div><div style="margin-top:28px"><a class="btn o" href="#/realisations">${T.all}</a></div></div></section>${cta()}`,
   realisations: () => `<div class="w phead"><div class="eyebrow">${T.year}</div><h1>${T.worksTitle}</h1></div><div class="w" style="padding-bottom:64px"><div class="proj">${[0, 1, 2, 5, 4, 3, 6, 7].map((i) => card(P[i], i)).join("")}</div></div>${cta()}`,
-  cv: () => `<div class="w phead"><div class="eyebrow">${T.path}</div><h1>${T.cvTitle}</h1><div class="lk"><a class="btn" href="assets/CV%20-%20Debiais%20Lylou.pdf" download="CV - Debiais Lylou.pdf">${T.download}</a></div></div>
+  cv: () => `<div class="w phead"><div class="eyebrow">${T.path}</div><h1>${T.cvTitle}</h1><div class="lk"><a class="btn" href="assets/CV/CV%20-%20Debiais%20Lylou.pdf" download="CV - Debiais Lylou.pdf">${T.download}</a></div></div>
 <section style="padding-top:0"><div class="w"><h2>${T.education}</h2><div class="tl">${educations.map((e) => `<div><span>${e[0]}</span><section style="padding:0"><h3>${e[1]}</h3><p>${e[2]}</p></section></div>`).join("")}</div></div></section>
 <section class="alt"><div class="w"><div class="eyebrow">${T.toolbox}</div><h2>${T.ideas}</h2><div class="cards c2"><div class="card"><h3>${T.design}</h3><br>${chips(["Illustrator", "Figma", "InDesign", "After Effects", "Premiere Pro", "Photoshop", "Canva"])}</div><div class="card"><h3>${T.web}</h3><br>${chips(["HTML/CSS", "JavaScript", "WordPress", "PHP", "MySQL"])}</div></div></div></section>${softs()}${cta()}`,
   contact: () => `<div class="w phead"><div class="eyebrow">${T.contactEyebrow}</div><h1>${T.contactTitle}</h1></div><div class="w two" style="padding-bottom:72px"><div class="ct"><h3 style="margin-top:0">${T.email}</h3><p><a href="mailto:lyloudebiais@gmail.com">lyloudebiais@gmail.com</a></p><h3>${T.phone}</h3><p><a href="tel:+33623068379">06 23 06 83 79</a></p><h3>${T.loc}</h3><p>${T.city}</p><div class="lk"><a class="btn o" href="https://www.linkedin.com/in/lylou-debiais-4ba06b332/" target="_blank" rel="noopener">LinkedIn</a><a class="btn o" href="https://www.instagram.com/lylou_debiais/" target="_blank" rel="noopener">Instagram</a></div></div><div class="card"><h3 style="margin-bottom:16px">${T.send}</h3><form class="form" id="contact-form"><input name="name" placeholder="${T.name}" required><input name="email" placeholder="Email" type="email" required><textarea name="message" rows="5" placeholder="${T.message}" required></textarea><button class="btn" type="submit">${T.submit}</button><p class="notice" id="form-note" hidden></p></form></div></div>`,
