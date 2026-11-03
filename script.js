@@ -259,6 +259,67 @@ const P = [
     }
   },
   {
+    id: "stage-le-phare",
+    img: "assets/stage-le-phare-icones.png",
+    s: ["UX/UI Design", "Figma", "Audit ergonomique", "User Stories", "Personae", "Design System", "Prototypage", "Wix", "Responsive Design", "Création d’icônes", "Référencement naturel"],
+    l: [["Visiter le site du Phare", "Visit Le Phare website", "https://www.lephare-limoges.com/"]],
+    previews: [["assets/stage-le-phare-icones.png", "Icônes créées"]],
+    docs: [
+      ["assets/stage-le-phare-rapport.pdf", "Rapport de stage", "Télécharger le rapport de stage"],
+      ["assets/stage-le-phare-soutenance.pdf", "Soutenance de stage", "Télécharger la soutenance"]
+    ],
+    fr: {
+      tag: "Stage · UX/UI Design",
+      t: "Le Phare,\nune nouvelle lumière.",
+      n: "Stage de 2ème année — Refonte du site du Phare",
+      d: "Refonte UX/UI et intégration Wix du site d’un espace de coworking et de culture à Limoges.",
+      c: "Moderniser l’image du Phare, clarifier son offre et améliorer le parcours utilisateur sur tous les supports.",
+      q: "Comment rendre l’offre du Phare plus lisible et son site plus cohérent avec l’expérience proposée dans le lieu ?",
+      did: "J’ai participé à la refonte complète du site vitrine du Phare, de l’audit ergonomique à l’intégration finale sur Wix. J’ai également conçu un système d’icônes pour structurer les différentes offres du lieu.",
+      o: [
+        "Moderniser l’image numérique de l’entreprise",
+        "Clarifier les offres de coworking, d’événements et de privatisation",
+        "Améliorer l’ergonomie et le parcours utilisateur",
+        "Adapter l’expérience aux ordinateurs et aux mobiles",
+        "Mettre en place une base cohérente pour le référencement naturel"
+      ],
+      r: [
+        "Audit de cinq pages avec les critères ergonomiques de Bastien & Scapin et identification de 16 problèmes d’utilisabilité",
+        "Benchmark, rédaction des User Stories et création de cinq personae cibles",
+        "Conception d’une charte graphique web et d’un Design System sur Figma",
+        "Création d’icônes dédiées aux espaces, services et usages du Phare",
+        "Maquettes desktop et mobile, puis prototype interactif",
+        "Intégration et mise en production d’un site de neuf pages sur Wix",
+        "Travail en équipe et prise en compte des retours professionnels"
+      ]
+    },
+    en: {
+      tag: "Internship · UX/UI Design",
+      t: "Le Phare,\na new light.",
+      n: "2nd-year internship — Le Phare website redesign",
+      d: "UX/UI redesign and Wix integration for a coworking and cultural space in Limoges.",
+      c: "Modernise Le Phare’s digital image, clarify its offer and improve the user journey across devices.",
+      q: "How can Le Phare’s offer become clearer while making the website more consistent with the experience provided by the venue?",
+      did: "I contributed to the complete redesign of Le Phare’s showcase website, from the usability audit to the final Wix integration. I also designed an icon system to structure the venue’s different offers.",
+      o: [
+        "Modernise the company’s digital image",
+        "Clarify coworking, events and private-hire offers",
+        "Improve usability and the user journey",
+        "Adapt the experience to desktop and mobile",
+        "Build a consistent foundation for search engine optimisation"
+      ],
+      r: [
+        "Audit of five pages using Bastien and Scapin’s ergonomic criteria, identifying 16 usability issues",
+        "Benchmark, User Stories and creation of five target personas",
+        "Web graphic charter and Design System designed in Figma",
+        "Creation of dedicated icons for Le Phare’s spaces, services and uses",
+        "Desktop and mobile mockups followed by an interactive prototype",
+        "Integration and launch of a nine-page website on Wix",
+        "Teamwork and incorporation of professional feedback"
+      ]
+    }
+  },
+  {
     id: "sae401",
     img: "assets/sae401/petits-gens-responsable-marketing-megaphone-publicite-push-publicite-push-strategie-marketing-traditionnelle-illustration-concept-marketing-interruption_335657-2571.avif",
     s: ["Direction artistique", "Identité visuelle", "Branding", "UX/UI Design", "Motion Design", "Print Design", "Figma", "Sémiotique", "Design Thinking", "Double Diamant", "Pitch oral", "Anglais professionnel"],
@@ -459,7 +520,7 @@ function chips(a) {
 }
 function card(p, i) {
   const x = tx(p);
-  const number = { sae301: 1, sae302: 2, sae303: 3, sae401: 4, sae402: 5, sae501: 6, "sae501-psd": 7 }[p.id] || i + 1;
+  const number = { sae301: 1, sae302: 2, sae303: 3, sae401: 4, sae402: 5, sae501: 6, "sae501-psd": 7, "stage-le-phare": 8 }[p.id] || i + 1;
   return `<a class="pc" href="#/projet/${p.id}"><div class="ph" style="background:${bg(p, i)}"><small>${x.tag}</small><b>0${number}</b>${x.t.replace("\n", "<br>")}</div><div class="tx"><h3>${x.n}</h3><p>${x.d}</p></div></a>`;
 }
 function bg(p, i) {
@@ -580,7 +641,7 @@ const V = {
 ${softs()}<section class="alt"><div class="w two"><div><div class="eyebrow">${T.journey}</div><h2>${T.look}</h2></div><div><p>${T.bio1}</p><p>${T.bio2}</p></div></div></section>
 <section><div class="w"><div class="eyebrow">${T.passions}</div><div class="cards"><div class="card"><div class="ic">🎨</div><h3>${T.p1t}</h3><p>${T.p1d}</p></div><div class="card"><div class="ic">✨</div><h3>${T.p2t}</h3><p>${T.p2d}</p></div><div class="card"><div class="ic">💻</div><h3>${T.p3t}</h3><p>${T.p3d}</p></div></div></div></section>
 <section class="alt"><div class="w"><div class="eyebrow">${T.best}</div><h2>${T.select}</h2><div class="proj p3">${[0, 1, 2].map((i) => card(P[i], i)).join("")}</div><div style="margin-top:28px"><a class="btn o" href="#/realisations">${T.all}</a></div></div></section>${cta()}`,
-  realisations: () => `<div class="w phead"><div class="eyebrow">${T.year}</div><h1>${T.worksTitle}</h1></div><div class="w" style="padding-bottom:64px"><div class="proj">${[0, 1, 4, 3, 2, 5, 6].map((i) => card(P[i], i)).join("")}</div></div>${cta()}`,
+  realisations: () => `<div class="w phead"><div class="eyebrow">${T.year}</div><h1>${T.worksTitle}</h1></div><div class="w" style="padding-bottom:64px"><div class="proj">${[0, 1, 2, 5, 4, 3, 6, 7].map((i) => card(P[i], i)).join("")}</div></div>${cta()}`,
   cv: () => `<div class="w phead"><div class="eyebrow">${T.path}</div><h1>${T.cvTitle}</h1><div class="lk"><a class="btn" href="assets/CV%20-%20Debiais%20Lylou.pdf" download="CV - Debiais Lylou.pdf">${T.download}</a></div></div>
 <section style="padding-top:0"><div class="w"><h2>${T.education}</h2><div class="tl">${educations.map((e) => `<div><span>${e[0]}</span><section style="padding:0"><h3>${e[1]}</h3><p>${e[2]}</p></section></div>`).join("")}</div></div></section>
 <section class="alt"><div class="w"><div class="eyebrow">${T.toolbox}</div><h2>${T.ideas}</h2><div class="cards c2"><div class="card"><h3>${T.design}</h3><br>${chips(["Illustrator", "Figma", "InDesign", "After Effects", "Premiere Pro", "Photoshop", "Canva"])}</div><div class="card"><h3>${T.web}</h3><br>${chips(["HTML/CSS", "JavaScript", "WordPress", "PHP", "MySQL"])}</div></div></div></section>${softs()}${cta()}`,
